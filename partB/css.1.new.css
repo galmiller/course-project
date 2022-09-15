@@ -7,7 +7,7 @@
     --black: rgb(29, 29, 29);
     --gold: rgb(255, 115, 0);
     --hover: rgba(255, 253, 253, 0.6);
-    
+      
   }
 body {
     background-image: url("../partB/images/03.29.22-Article-Web.jpg");
@@ -122,7 +122,7 @@ color:#fff;
 .UpGrid{
 grid-area: UpGrid;
 margin: 120px;
-padding-left: 30%;
+padding-left: 25%;
 
 
 
@@ -179,3 +179,25 @@ padding-left: 30%;
     background-color: rgb(51, 109, 109);
 
 }
+#AboutUs{
+
+color:rgb(98, 197, 151);
+font-size: x-large;
+
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+
+  }
+  .GeoContainer{
+height:500px;
+width:500px;
+
+  }
+
+
+  

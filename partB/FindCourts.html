@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css.1.new.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
     <script defer src="js.1.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      deferß
-    ></script>
+    <script defer src="ServerRequest.js"></script>
+    <script defer src="DataCourts.js"></script>
+    <script defer src="js.geolocation.js"></script>
+    
     <title>Find A Court</title>
 </head>
 <body>
@@ -31,9 +32,21 @@
     </header>
 
     <div class="GeoContainer">
+        <input type="text" name="foo">
+        
+
+
+        <div id="map"></div>
+        <button onclick="getLocation()">Neaby courts</button>
+        <span id="geo"></span>
+       
+
+        
        
     </div>
 
+    <div id="table">
+    
     <footer class="footer">
         <div id="phone">
             <label>050-7534331</label>
@@ -42,6 +55,11 @@
         
     </footer>
     </div>
-    
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
 </body>
 </html>
