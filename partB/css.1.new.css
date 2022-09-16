@@ -3,11 +3,9 @@
 :root{
     --pink: rgb(240, 128, 128);
     --headcolor:  #f1720a;
-    --bej: rgb(213, 213, 148);
     --black: rgb(29, 29, 29);
-    --gold: rgb(255, 115, 0);
     --hover: rgba(255, 253, 253, 0.6);
-      
+      --blue: rgb(13, 50, 211);
   }
 body {
     background-image: url("../partB/images/03.29.22-Article-Web.jpg");
@@ -17,8 +15,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: blur(5px);
    
-   
+}
+
+#table{
+
+    align-items: center;
+    padding-left: 50%;
+
 }
 * {
     box-sizing: border-box;
@@ -26,7 +31,6 @@ body {
     margin: 0;
    
 }
-
 
 
 
@@ -176,14 +180,15 @@ padding-left: 25%;
     float: align;
     height: 50px;
     width: 100px;
-    background-color: rgb(51, 109, 109);
+    background-color: var(--blue)
 
 }
 #AboutUs{
 
-color:rgb(98, 197, 151);
+color:var(--blue);
 font-size: x-large;
-
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding-top: 10%;
 }
 
 #map {
@@ -193,11 +198,38 @@ font-size: x-large;
     /* The width is the width of the web page */
 
   }
-  .GeoContainer{
-height:500px;
-width:500px;
-
-  }
-
-
   
+
+  #NearClick{
+    float: align;
+    height: 50px;
+    width: 100px;
+    background-color: var(--blue);
+    margin-left: 100%;
+    margin-top: 5%;
+}
+  #ChoosDayLabel{
+
+      margin-top:20%;
+}
+
+  .GeoContainer {
+    display: grid;
+    grid-template-areas: 'headerNav headerNav headerNav' 
+                            'Title Title Title'
+                            'MapContainer MapContainer MapContainer'
+                            'md-sync-events-outlook-cont md-sync-events-outlook-cont md-sync-events-outlook-cont'
+                            'Footer Footer Footer';
+                      
+    justify-items: center;
+    position: relative;
+
+}
+
+
+.MapContainer{
+grid-area: MapContainer; 
+height:500px;
+width:500px;d
+    
+}

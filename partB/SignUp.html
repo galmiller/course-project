@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="Container">
+        <div class="title"><h1>Sign Up</h1></div>
         <header class="HeaderNav">
             <img id="basketBall-logo" src="images/how-to-shoot-a-basketball.jpg" alt="">
             <nav>
@@ -25,20 +26,20 @@
         </header>
     
         <div Class="UpGrid">
-        <form id="connect_border" action="/FindCourts.html" method="post" name="connect_form"
+        <form id="connect_border" action="FindCourts.html" method="post" name="connect_form"
           onsubmit="return connect_validation(document.connect_form.pass,document.connect_form.name);">
         <label class="username">Email:</label>
-        <input type="email" class="input" id="email" name="email" autocomplete="on">
+        <input type="email" class="input" id="email" name="email" placeholder="Email" required  autocomplete="on">
         <br><br>
         <label class="password">Password:</label>
-        <input type="text" class="input" id="pass" name="pass" minlength="2" autocomplete="on">
+        <input type="password" class="input" id="pass" name="pass" placeholder="Password" required minlength="2" autocomplete="on">
         <br><br>
         
         <label class="FirstName">First Name:</label>
-        <input type="text" class="input" id="name" name="Firstname" minlength="2" autocomplete="on">
+        <input type="text" class="input" id="name" name="Firstname" placeholder="First Name" required minlength="2" autocomplete="on">
         <br><br>
         <label class="LastName">Last Name:</label>
-        <input type="text" class="input" id="pass" name="LastName" minlength="2" autocomplete="on">
+        <input type="text" class="input" id="pass" name="LastName" placeholder="Last Name" required minlength="2" autocomplete="on">
         <br><br>
         <button type="submit" id="send_button" name="send_button">Send</button>
         
