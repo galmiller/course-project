@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css.1.new.css">
+    <script defer src="../static/js.1.js"></script>
+</head>
+<body>
+    <div class="Container">
+        <div class="title"><h1>Sign in</h1></div>
+        <header class="HeaderNav">
+            <img id="basketBall-logo" src="../images/how-to-shoot-a-basketball.jpg" alt="logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a id="nav-element right-nav" href="./home.html">Home</a>
+                    </li>
+                    <li>
+                        <a id="nav-element" href="./AboutUs.html">AboutUs</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div Class="UpGrid">
+        <form id="connect_border" action="FindCourts.html" method="post" name="connect_form"
+          onsubmit="return connect_validation(document.connect_form.pass,document.connect_form.name);">
+        <label class="username">Email:</label>
+        <input type="email" class="input" id="email" name="email" placeholder="Email" required  autocomplete="on">
+            <br><br>
+        <label class="password">Password:</label>
+        <input type="password" class="input" id="pass" name="pass" placeholder="Password" required minlength="2" autocomplete="on">
+        <br><br>
+        <button type="submit" id="send_button" name="send_button" >Send</button>
+       
+    
+        </form>
+         </div>
+    
+        <footer class="footer">
+            <div id="phone">
+                <label>052-3456789</label>
+            </div>
+            <span>EasyBasket@gmail.com</span>
+            
+        </footer>
+    </div>   
+</body>
+</html>
