@@ -131,7 +131,7 @@ color:#fff;
 grid-area: UpGrid;
 margin: 100px;
 padding-left: 25%;
-
+padding: 4%;
 
 
 }
@@ -141,6 +141,11 @@ padding-left: 25%;
     
 
 }
+#abouttext{
+margin-top: 14%;
+
+}
+
 .footer{
     grid-area: Footer;
 
