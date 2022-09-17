@@ -35,40 +35,30 @@
     </header>
 
     <div class="MapContainer">
-        <input type="text" name="foo">
+        <input type="text" name="foo" id="datePicker">
         
 
 
         <div id="map"></div>
-       <div id="DayCombo">
-        <label for="Days" id="ChoosDayLabel">Choose a Session:</label>
-        <select name="Days" id="Days">
-          <option value="sunday">morning</option>
-          <option value="monday">afternoon</option>
-          <option value="tuesday">evening</option>
+        <input type="text" name="court" id="court">
+        <div id="DayCombo">
+        <label for="days" id="ChoosDayLabel">Choose a Session:</label>
+        <select name="days" id="days">
+          <option value="morning">morning</option>
+          <option value="afternoon">afternoon</option>
+          <option value="evening">evening</option>
         </select>
         
           </div>
         <button onclick="getLocation()" id="NearClick">Neaby courts</button>
+        <button onclick="location.href='myProfile.html'" class="courtsSubmit">Submit</button>
         <span id="geo"></span>
-       
+      
 
         
        
     </div>
 
-    <!-- <section>
-        <h2 class="desktop-header">Embedded Calendar Desktop View</h2>
-          <h2 class="mobile-header">Embedded Calendar Mobile View</h2>
-        <div class="responsive-iframe-container small-container">
-          <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;src=61863jvf1a2cb5g6644ruc0p4s%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FNew_York"
-            style="border-width:0" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
-        </div>
-        <div class="responsive-iframe-container large-container">
-          <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=61863jvf1a2cb5g6644ruc0p4s%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FNew_York" style="border-width:0" min-width="800" min-height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-        
-        </section> -->
     
     <footer class="footer">
         <div id="phone">
@@ -83,11 +73,10 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
       defer
     ></script>
-    <!-- <script async
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap">
-</script> -->
+ 
 
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+   <script src="../static/findCourts.js"> </script>
 </body>
 </html>
