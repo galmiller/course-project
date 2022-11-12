@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS `courts` (
+    id varchar(255) NOT NULL PRIMARY KEY,
+    name varchar(255) NOT NULL,
+    lon varchar(80) NOT NULL,
+    lat varchar(80) NOT NULL,
+    address varchar(80) NOT NULL,
+    img varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `orders` (
+id varchar(255) NOT NULL PRIMARY KEY ,
+date varchar(255) NOT NULL,
+time varchar(80) NOT NULL,
+players_number int NOT NULL,
+court_id varchar(255) NOT NULL,
+user_id varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `users` (
+id varchar(255) NOT NULL PRIMARY KEY ,
+email varchar(255) NOT NULL,
+password varchar(255) NOT NULL,
+first_name varchar(255) NOT NULL,
+last_name varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+

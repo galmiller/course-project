@@ -1,0 +1,47 @@
+<%- include('./shared/header'); -%>
+
+    <div class="box-form">
+        <div class="left">
+            <div class="overlay">
+                <h1>Meet EasyBasket.</h1>
+                <p>EasyBasket is a platform that will allow you to find the basketball courts near your
+                    location.<br><br>
+                    We will do everything in order to give you a comfortable experience
+                    of searching for courts and placing in the court of your choice.</p>
+                <hr>
+                <span>
+                    <p><b>Login with social media</b></p>
+                    <a href="#" class="social-login-btn"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="social-login-btn"><i class="fab fa-twitter" aria-hidden="true"></i> Login with
+                        Twitter</a>
+                </span>
+            </div>
+        </div>
+        <div class="right">
+            <form action="/login" method="POST">
+                <h5>Login</h5>
+                <p>Don't have an account? <a href="/register">Create Your Account</a> it takes less than a minute</p>
+                <div class="inputs">
+                    <input type="text" name="email" placeholder="email">
+                    <br>
+                    <input type="password" name="password" placeholder="password">
+                </div>
+
+                <br><br>
+
+                <div class="remember-me--forget-password">
+                    <label>
+                        <input type="checkbox" name="item" checked />
+                        <span class="text-checkbox">Remember me</span>
+                    </label>
+                    <p>forget password?</p>
+                </div>
+
+                <br>
+                <button>Login</button>
+            </form>
+        </div>
+
+    </div>
+
+    <%- include('./shared/footer'); -%>

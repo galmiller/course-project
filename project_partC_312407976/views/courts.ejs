@@ -1,0 +1,36 @@
+<%- include('./shared/header'); -%>
+
+  <div class="box-form">
+    <div class="right">
+      <form action="/createOrder/<%=user_id  %>" method="POST">
+        <h1><b>Book a Court</b></h1>
+        <p>Search and book a court near by you</p>
+        <div class="inputs">
+          <select name="courtSelection" id="courtSelection" required>
+            <option value="-" disabled selected>Select court</option>
+            <% courts.forEach(court=>{ %>
+             <option value="<%= court.lon %>,<%= court.lat %>"><%= court.name %></option>
+              <% }) %>
+
+          </select>
+          <input type="date" name="date" id="" required>
+          <input type="time" name="time" id="" required>
+          <input type="number" name="playersNumber" min="1" id="" placeholder="Number of players" required>
+          <br>
+        </div>
+        <br>
+        <button>Book Now</button>
+      </form>
+      <input id="points" value="[<%=points  %>]" hidden>
+      <input id="maptoken" value="<%=maptoken  %>" hidden>
+
+    </div>
+    <div class="left">
+      <div id='map' style='width: 100vh; height: 700px;'></div>
+
+      <script src="../js/dataCourts.js"></script>
+      <script src="../js/mapbox.js"></script>
+    </div>
+  </div>
+
+  <%- include('./shared/footer'); -%>

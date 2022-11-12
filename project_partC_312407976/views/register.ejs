@@ -1,0 +1,41 @@
+<%- include('./shared/header'); -%>
+
+  <div class="box-form">
+    <div class="right">
+      <form action="/register" method="POST">
+        <h5>Register</h5>
+        <p>Have an account? <a href="/">Login to Your Account</a> it takes less than a minute</p>
+        <div class="inputs">
+          
+          <input type="email" name="email" placeholder="Email" required  autocomplete="on">
+          <br>
+          <input type="password" name="pass" placeholder="Password" required minlength="2" autocomplete="on">
+          <br>
+          <input type="text" name="firstname" placeholder="First Name" required minlength="2" autocomplete="on">
+          <br>
+          <input type="text" name="lastName" placeholder="Last Name" required minlength="2" autocomplete="on">
+        </div>
+
+        <br>
+        <button type='submit' value="INSERT" >Sign Up</button>
+      </form>
+    </div>
+    <div class="left">
+      <div class="overlay">
+        <h1>Meet EasyBasket.</h1>
+        <p>EasyBasket is a platform that will allow you to find the basketball courts near your
+          location.<br><br>
+          We will do everything in order to give you a comfortable experience
+          of searching for courts and placing in the court of your choice.</p>
+        <hr>
+        <span>
+          <p><b>Register with social media</b></p>
+          <a href="#" class="social-login-btn"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="social-login-btn"><i class="fab fa-twitter" aria-hidden="true"></i> Register with
+            Twitter</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <%- include('./shared/footer'); -%>
